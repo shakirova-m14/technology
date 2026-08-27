@@ -1,276 +1,266 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="uz">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Faxriddinov Diyorbek | Portfolio</title>
+    <title>Faxriddinov Diyorbek | Portfolio</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
-    rel="stylesheet"
-  >
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
 
-  <style>
-
-    /* ===============================
+    <style>
+      /* ===============================
        ASOSIY
     =============================== */
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+      }
 
-    :root {
-      --bg: #020607;
-      --bg2: #061012;
+      :root {
+        --bg: #020607;
+        --bg2: #061012;
 
-      --card: #081113;
-      --card2: #0c1719;
+        --card: #081113;
+        --card2: #0c1719;
 
-      --border: #173034;
+        --border: #173034;
 
-      --text: #ffffff;
-      --gray: #829294;
-      --gray2: #536366;
+        --text: #ffffff;
+        --gray: #829294;
+        --gray2: #536366;
 
-      --green: #00e676;
-      --green2: #00b894;
+        --green: #00e676;
+        --green2: #00b894;
 
-      --blue: #00a8ff;
-      --blue2: #00bcd4;
-    }
+        --blue: #00a8ff;
+        --blue2: #00bcd4;
+      }
 
-    body {
-      font-family: "Inter", sans-serif;
+      body {
+        font-family: "Inter", sans-serif;
 
-      color: var(--text);
+        color: var(--text);
 
-      background:
-        radial-gradient(
-          circle at 80% 0%,
-          rgba(0,168,255,.15),
-          transparent 30%
-        ),
-        radial-gradient(
-          circle at 0% 40%,
-          rgba(0,230,118,.08),
-          transparent 30%
-        ),
-        var(--bg);
+        background:
+          radial-gradient(
+            circle at 80% 0%,
+            rgba(0, 168, 255, 0.15),
+            transparent 30%
+          ),
+          radial-gradient(
+            circle at 0% 40%,
+            rgba(0, 230, 118, 0.08),
+            transparent 30%
+          ),
+          var(--bg);
 
-      overflow-x: hidden;
-    }
+        overflow-x: hidden;
+      }
 
-    body::before {
-      content: "";
+      body::before {
+        content: "";
 
-      position: fixed;
+        position: fixed;
 
-      inset: 0;
+        inset: 0;
 
-      pointer-events: none;
+        pointer-events: none;
 
-      background-image:
-        linear-gradient(
-          rgba(255,255,255,.015) 1px,
-          transparent 1px
-        ),
-        linear-gradient(
-          90deg,
-          rgba(255,255,255,.015) 1px,
-          transparent 1px
-        );
+        background-image:
+          linear-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 1px),
+          linear-gradient(
+            90deg,
+            rgba(255, 255, 255, 0.015) 1px,
+            transparent 1px
+          );
 
-      background-size: 50px 50px;
+        background-size: 50px 50px;
 
-      z-index: -1;
-    }
+        z-index: -1;
+      }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
 
-    img {
-      width: 100%;
-      display: block;
-      object-fit: cover;
-    }
+      img {
+        width: 100%;
+        display: block;
+        object-fit: cover;
+      }
 
-    .container {
-      width: min(1200px, 92%);
-      margin: auto;
-    }
+      .container {
+        width: min(1200px, 92%);
+        margin: auto;
+      }
 
-
-    /* ===============================
+      /* ===============================
        HEADER
     =============================== */
 
-    header {
-      position: fixed;
+      header {
+        position: fixed;
 
-      top: 0;
-      left: 0;
+        top: 0;
+        left: 0;
 
-      width: 100%;
+        width: 100%;
 
-      z-index: 1000;
+        z-index: 1000;
 
-      background: rgba(2,6,7,.78);
+        background: rgba(2, 6, 7, 0.78);
 
-      backdrop-filter: blur(20px);
+        backdrop-filter: blur(20px);
 
-      border-bottom:
-        1px solid rgba(0,230,118,.08);
-    }
+        border-bottom: 1px solid rgba(0, 230, 118, 0.08);
+      }
 
-    nav {
-      width: min(1200px,92%);
+      nav {
+        width: min(1200px, 92%);
 
-      height: 78px;
+        height: 78px;
 
-      margin: auto;
+        margin: auto;
 
-      display: flex;
+        display: flex;
 
-      align-items: center;
+        align-items: center;
 
-      justify-content: space-between;
-    }
+        justify-content: space-between;
+      }
 
-    .logo {
-      font-size: 23px;
+      .logo {
+        font-size: 23px;
 
-      font-weight: 900;
+        font-weight: 900;
 
-      letter-spacing: -1px;
-    }
+        letter-spacing: -1px;
+      }
 
-    .logo span {
-      color: var(--green);
-    }
+      .logo span {
+        color: var(--green);
+      }
 
-    .nav-links {
-      list-style: none;
+      .nav-links {
+        list-style: none;
 
-      display: flex;
+        display: flex;
 
-      gap: 27px;
-    }
+        gap: 27px;
+      }
 
-    .nav-links a {
-      color: #849294;
+      .nav-links a {
+        color: #849294;
 
-      font-size: 12px;
+        font-size: 12px;
 
-      transition: .3s;
-    }
+        transition: 0.3s;
+      }
 
-    .nav-links a:hover {
-      color: var(--green);
-    }
+      .nav-links a:hover {
+        color: var(--green);
+      }
 
-    .nav-contact {
-      padding: 11px 18px;
+      .nav-contact {
+        padding: 11px 18px;
 
-      border: 1px solid #234044;
+        border: 1px solid #234044;
 
-      border-radius: 30px;
+        border-radius: 30px;
 
-      font-size: 12px;
+        font-size: 12px;
 
-      transition: .3s;
-    }
+        transition: 0.3s;
+      }
 
-    .nav-contact:hover {
-      background: var(--green);
+      .nav-contact:hover {
+        background: var(--green);
 
-      color: #001208;
+        color: #001208;
 
-      border-color: var(--green);
+        border-color: var(--green);
 
-      box-shadow:
-        0 0 25px rgba(0,230,118,.25);
-    }
+        box-shadow: 0 0 25px rgba(0, 230, 118, 0.25);
+      }
 
-
-    /* ===============================
+      /* ===============================
        HERO
     =============================== */
 
-    .hero {
-      min-height: 100vh;
+      .hero {
+        min-height: 100vh;
 
-      padding-top: 110px;
+        padding-top: 110px;
 
-      display: flex;
+        display: flex;
 
-      align-items: center;
+        align-items: center;
 
-      justify-content: space-between;
+        justify-content: space-between;
 
-      gap: 60px;
-    }
+        gap: 60px;
+      }
 
-    .hero-text {
-      max-width: 680px;
-    }
+      .hero-text {
+        max-width: 680px;
+      }
 
-    .status {
-      display: inline-flex;
+      .status {
+        display: inline-flex;
 
-      align-items: center;
+        align-items: center;
 
-      gap: 9px;
+        gap: 9px;
 
-      padding: 9px 15px;
+        padding: 9px 15px;
 
-      border: 1px solid #1b3538;
+        border: 1px solid #1b3538;
 
-      border-radius: 50px;
+        border-radius: 50px;
 
-      background: rgba(255,255,255,.02);
+        background: rgba(255, 255, 255, 0.02);
 
-      color: #849294;
+        color: #849294;
 
-      font-size: 11px;
+        font-size: 11px;
 
-      margin-bottom: 25px;
-    }
+        margin-bottom: 25px;
+      }
 
-    .status-dot {
-      width: 8px;
-      height: 8px;
+      .status-dot {
+        width: 8px;
+        height: 8px;
 
-      border-radius: 50%;
+        border-radius: 50%;
 
-      background: var(--green);
+        background: var(--green);
 
-      box-shadow:
-        0 0 15px var(--green);
-    }
+        box-shadow: 0 0 15px var(--green);
+      }
 
-    .hero h1 {
-      font-size: clamp(50px,7vw,90px);
+      .hero h1 {
+        font-size: clamp(50px, 7vw, 90px);
 
-      line-height: .95;
+        line-height: 0.95;
 
-      letter-spacing: -6px;
+        letter-spacing: -6px;
 
-      margin-bottom: 30px;
-    }
+        margin-bottom: 30px;
+      }
 
-    .gradient {
-      background:
-        linear-gradient(
+      .gradient {
+        background: linear-gradient(
           90deg,
           #fff,
           var(--green),
@@ -278,2449 +268,1730 @@
           var(--blue)
         );
 
-      -webkit-background-clip: text;
+        -webkit-background-clip: text;
 
-      -webkit-text-fill-color: transparent;
-    }
+        -webkit-text-fill-color: transparent;
+      }
 
-    .hero-description {
-      max-width: 570px;
+      .hero-description {
+        max-width: 570px;
 
-      color: var(--gray);
+        color: var(--gray);
 
-      font-size: 15px;
+        font-size: 15px;
 
-      line-height: 1.9;
+        line-height: 1.9;
 
-      margin-bottom: 35px;
-    }
+        margin-bottom: 35px;
+      }
 
-    .hero-buttons {
-      display: flex;
+      .hero-buttons {
+        display: flex;
 
-      gap: 12px;
+        gap: 12px;
 
-      flex-wrap: wrap;
-    }
+        flex-wrap: wrap;
+      }
 
-    .btn {
-      display: inline-flex;
+      .btn {
+        display: inline-flex;
 
-      align-items: center;
+        align-items: center;
 
-      justify-content: center;
+        justify-content: center;
 
-      padding: 14px 22px;
+        padding: 14px 22px;
 
-      border-radius: 11px;
+        border-radius: 11px;
 
-      font-size: 13px;
+        font-size: 13px;
 
-      font-weight: 800;
+        font-weight: 800;
 
-      transition: .3s;
-    }
+        transition: 0.3s;
+      }
 
-    .btn-primary {
-      color: #001208;
+      .btn-primary {
+        color: #001208;
 
-      background:
-        linear-gradient(
-          90deg,
-          var(--green),
-          var(--blue2)
-        );
-    }
+        background: linear-gradient(90deg, var(--green), var(--blue2));
+      }
 
-    .btn-primary:hover {
-      transform: translateY(-4px);
+      .btn-primary:hover {
+        transform: translateY(-4px);
 
-      box-shadow:
-        0 15px 35px rgba(0,230,118,.18);
-    }
+        box-shadow: 0 15px 35px rgba(0, 230, 118, 0.18);
+      }
 
-    .btn-outline {
-      color: #c8d0d1;
+      .btn-outline {
+        color: #c8d0d1;
 
-      border: 1px solid #20383c;
+        border: 1px solid #20383c;
 
-      background: #071012;
-    }
+        background: #071012;
+      }
 
-    .btn-outline:hover {
-      transform: translateY(-4px);
+      .btn-outline:hover {
+        transform: translateY(-4px);
 
-      border-color: var(--green);
+        border-color: var(--green);
 
-      color: var(--green);
-    }
+        color: var(--green);
+      }
 
-
-    /* ===============================
+      /* ===============================
        HERO RASM
     =============================== */
 
-    .hero-card {
-      width: 370px;
+      .hero-card {
+        width: 370px;
 
-      flex-shrink: 0;
+        flex-shrink: 0;
 
-      padding: 20px;
+        padding: 20px;
 
-      border-radius: 25px;
+        border-radius: 25px;
 
-      background:
-        linear-gradient(
-          145deg,
-          #101c1e,
-          #050909
-        );
+        background: linear-gradient(145deg, #101c1e, #050909);
 
-      border: 1px solid #1b3538;
+        border: 1px solid #1b3538;
 
-      box-shadow:
-        0 30px 100px rgba(0,0,0,.6);
-    }
+        box-shadow: 0 30px 100px rgba(0, 0, 0, 0.6);
+      }
 
-    .hero-image {
-      height: 330px;
+      .hero-image {
+        height: 330px;
 
-      border-radius: 18px;
+        border-radius: 18px;
 
-      overflow: hidden;
+        overflow: hidden;
 
-      background:
-        linear-gradient(
-          135deg,
-          var(--green),
-          var(--blue)
-        );
-    }
+        background: linear-gradient(135deg, var(--green), var(--blue));
+      }
 
-    .hero-image img {
-      height: 100%;
-    }
+      .hero-image img {
+        height: 100%;
+      }
 
-    .hero-card-info {
-      padding: 20px 5px 5px;
-    }
+      .hero-card-info {
+        padding: 20px 5px 5px;
+      }
 
-    .hero-card-info h3 {
-      font-size: 21px;
+      .hero-card-info h3 {
+        font-size: 21px;
 
-      margin-bottom: 7px;
-    }
+        margin-bottom: 7px;
+      }
 
-    .hero-card-info p {
-      color: #708083;
+      .hero-card-info p {
+        color: #708083;
 
-      font-size: 12px;
-    }
+        font-size: 12px;
+      }
 
-
-    /* ===============================
+      /* ===============================
        SECTIONS
     =============================== */
 
-    section {
-      padding: 120px 0;
-    }
+      section {
+        padding: 120px 0;
+      }
 
-    .section-label {
-      color: var(--green);
+      .section-label {
+        color: var(--green);
 
-      font-size: 10px;
+        font-size: 10px;
 
-      letter-spacing: 4px;
+        letter-spacing: 4px;
 
-      text-transform: uppercase;
-    }
+        text-transform: uppercase;
+      }
 
-    .section-title {
-      font-size: 48px;
+      .section-title {
+        font-size: 48px;
 
-      letter-spacing: -3px;
+        letter-spacing: -3px;
 
-      margin-top: 10px;
+        margin-top: 10px;
 
-      margin-bottom: 50px;
-    }
+        margin-bottom: 50px;
+      }
 
-
-    /* ===============================
+      /* ===============================
        ABOUT
     =============================== */
 
-    .about-grid {
-      display: grid;
+      .about-grid {
+        display: grid;
 
-      grid-template-columns:
-        1.2fr .8fr;
+        grid-template-columns: 1.2fr 0.8fr;
 
-      gap: 20px;
-    }
+        gap: 20px;
+      }
 
-    .dark-card {
-      padding: 35px;
+      .dark-card {
+        padding: 35px;
 
-      border-radius: 22px;
+        border-radius: 22px;
 
-      background:
-        rgba(8,17,19,.88);
+        background: rgba(8, 17, 19, 0.88);
 
-      border: 1px solid var(--border);
-    }
+        border: 1px solid var(--border);
+      }
 
-    .about-text {
-      color: #7d8b8e;
+      .about-text {
+        color: #7d8b8e;
 
-      font-size: 15px;
+        font-size: 15px;
 
-      line-height: 2;
-    }
+        line-height: 2;
+      }
 
-    .about-text strong {
-      color: white;
-    }
+      .about-text strong {
+        color: white;
+      }
 
-    .info-list {
-      display: grid;
+      .info-list {
+        display: grid;
 
-      gap: 22px;
-    }
+        gap: 22px;
+      }
 
-    .info-row {
-      display: flex;
+      .info-row {
+        display: flex;
 
-      justify-content: space-between;
+        justify-content: space-between;
 
-      gap: 20px;
+        gap: 20px;
 
-      padding-bottom: 18px;
+        padding-bottom: 18px;
 
-      border-bottom: 1px solid #193034;
-    }
+        border-bottom: 1px solid #193034;
+      }
 
-    .info-row:last-child {
-      border-bottom: 0;
-    }
+      .info-row:last-child {
+        border-bottom: 0;
+      }
 
-    .info-row span:first-child {
-      color: #607073;
-    }
+      .info-row span:first-child {
+        color: #607073;
+      }
 
-    .info-row span:last-child {
-      font-weight: 700;
+      .info-row span:last-child {
+        font-weight: 700;
 
-      text-align: right;
-    }
+        text-align: right;
+      }
 
-
-    /* ===============================
+      /* ===============================
        STATS
     =============================== */
 
-    .stats {
-      display: grid;
+      .stats {
+        display: grid;
 
-      grid-template-columns:
-        repeat(4,1fr);
+        grid-template-columns: repeat(4, 1fr);
 
-      gap: 15px;
+        gap: 15px;
 
-      margin-top: 20px;
-    }
+        margin-top: 20px;
+      }
 
-    .stat {
-      padding: 30px;
+      .stat {
+        padding: 30px;
 
-      border-radius: 20px;
+        border-radius: 20px;
 
-      background: #081012;
+        background: #081012;
 
-      border: 1px solid #172f33;
+        border: 1px solid #172f33;
 
-      transition: .3s;
-    }
+        transition: 0.3s;
+      }
 
-    .stat:hover {
-      transform: translateY(-6px);
+      .stat:hover {
+        transform: translateY(-6px);
 
-      border-color: #00a88a;
-    }
+        border-color: #00a88a;
+      }
 
-    .stat-number {
-      font-size: 38px;
+      .stat-number {
+        font-size: 38px;
 
-      font-weight: 900;
+        font-weight: 900;
 
-      background:
-        linear-gradient(
-          90deg,
-          var(--green),
-          var(--blue)
-        );
+        background: linear-gradient(90deg, var(--green), var(--blue));
 
-      -webkit-background-clip: text;
+        -webkit-background-clip: text;
 
-      -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: transparent;
 
-      margin-bottom: 7px;
-    }
+        margin-bottom: 7px;
+      }
 
-    .stat-name {
-      color: #647477;
+      .stat-name {
+        color: #647477;
 
-      font-size: 11px;
-    }
+        font-size: 11px;
+      }
 
-
-    /* ===============================
+      /* ===============================
        SKILLS
     =============================== */
 
-    .skills-grid {
-      display: grid;
+      .skills-grid {
+        display: grid;
 
-      grid-template-columns:
-        1fr 1fr;
+        grid-template-columns: 1fr 1fr;
 
-      gap: 20px;
-    }
+        gap: 20px;
+      }
 
-    .skill-box {
-      padding: 30px;
+      .skill-box {
+        padding: 30px;
 
-      border-radius: 20px;
+        border-radius: 20px;
 
-      background: #081012;
+        background: #081012;
 
-      border: 1px solid #172f33;
-    }
+        border: 1px solid #172f33;
+      }
 
-    .skill-header {
-      display: flex;
+      .skill-header {
+        display: flex;
 
-      justify-content: space-between;
+        justify-content: space-between;
 
-      margin-bottom: 13px;
+        margin-bottom: 13px;
 
-      font-size: 14px;
-    }
+        font-size: 14px;
+      }
 
-    .skill-header span:last-child {
-      color: var(--green);
-    }
+      .skill-header span:last-child {
+        color: var(--green);
+      }
 
-    .progress-bg {
-      height: 8px;
+      .progress-bg {
+        height: 8px;
 
-      background: #142326;
+        background: #142326;
 
-      border-radius: 30px;
+        border-radius: 30px;
 
-      overflow: hidden;
-    }
+        overflow: hidden;
+      }
 
-    .progress {
-      height: 100%;
+      .progress {
+        height: 100%;
 
-      border-radius: 30px;
+        border-radius: 30px;
 
-      background:
-        linear-gradient(
+        background: linear-gradient(
           90deg,
           var(--green),
           var(--blue2),
           var(--blue)
         );
 
-      box-shadow:
-        0 0 20px rgba(0,230,118,.3);
-    }
+        box-shadow: 0 0 20px rgba(0, 230, 118, 0.3);
+      }
 
-
-    /* ===============================
+      /* ===============================
        OYLIK
     =============================== */
 
-    .salary-section {
-      display: grid;
+      .salary-section {
+        display: grid;
 
-      grid-template-columns:
-        .75fr 1.25fr;
+        grid-template-columns: 0.75fr 1.25fr;
 
-      gap: 25px;
-    }
+        gap: 25px;
+      }
 
-    .salary-info {
-      padding: 40px;
+      .salary-info {
+        padding: 40px;
 
-      border-radius: 25px;
+        border-radius: 25px;
 
-      background:
-        radial-gradient(
-          circle at 100% 0%,
-          rgba(0,168,255,.16),
-          transparent 40%
-        ),
-        #081012;
+        background:
+          radial-gradient(
+            circle at 100% 0%,
+            rgba(0, 168, 255, 0.16),
+            transparent 40%
+          ),
+          #081012;
 
-      border: 1px solid #1b3538;
-    }
+        border: 1px solid #1b3538;
+      }
 
-    .salary-info h3 {
-      font-size: 32px;
+      .salary-info h3 {
+        font-size: 32px;
 
-      margin: 15px 0;
-    }
+        margin: 15px 0;
+      }
 
-    .salary-info p {
-      color: #718083;
+      .salary-info p {
+        color: #718083;
 
-      line-height: 1.8;
+        line-height: 1.8;
 
-      font-size: 14px;
-    }
+        font-size: 14px;
+      }
 
-    .salary-image {
-      min-height: 400px;
+      .salary-image {
+        min-height: 400px;
 
-      border-radius: 25px;
+        border-radius: 25px;
 
-      overflow: hidden;
+        overflow: hidden;
 
-      background:
-        #0d1719;
+        background: #0d1719;
 
-      border: 1px solid #1b3538;
+        border: 1px solid #1b3538;
 
-      position: relative;
-    }
+        position: relative;
+      }
 
-    .salary-image img {
-      width: 100%;
+      .salary-image img {
+        width: 100%;
 
-      height: 100%;
+        height: 100%;
 
-      min-height: 400px;
+        min-height: 400px;
 
-      object-fit: cover;
-    }
+        object-fit: cover;
+      }
 
-    .image-placeholder {
-      position: absolute;
+      .image-placeholder {
+        position: absolute;
 
-      inset: 0;
+        inset: 0;
 
-      display: none;
+        display: none;
 
-      align-items: center;
+        align-items: center;
 
-      justify-content: center;
+        justify-content: center;
 
-      flex-direction: column;
+        flex-direction: column;
 
-      gap: 10px;
+        gap: 10px;
 
-      color: #536366;
+        color: #536366;
 
-      background:
-        repeating-linear-gradient(
+        background: repeating-linear-gradient(
           45deg,
           #091315,
           #091315 10px,
           #0b181a 10px,
           #0b181a 20px
         );
-    }
+      }
 
-    .image-placeholder strong {
-      color: var(--green);
-    }
+      .image-placeholder strong {
+        color: var(--green);
+      }
 
-
-    /* ===============================
+      /* ===============================
        5 TA A'ZO
     =============================== */
 
-    .members {
-      display: grid;
-
-      grid-template-columns:
-        repeat(5,1fr);
-
-      gap: 18px;
-    }
-
-    .member {
-      position: relative;
-
-      height: 360px;
-
-      overflow: hidden;
-
-      border-radius: 22px;
-
-      background: #0b1416;
-
-      border: 1px solid #193034;
-
-      transition: .4s;
-    }
-
-    .member:hover {
-      transform: translateY(-8px);
-
-      border-color: var(--green);
-
-      box-shadow:
-        0 20px 50px rgba(0,230,118,.08);
-    }
-
-    .member img {
-      width: 100%;
-
-      height: 100%;
-
-      object-fit: cover;
-
-      transition: .5s;
-    }
-
-    .member:hover img {
-      transform: scale(1.08);
-    }
-
-    .member::after {
-      content: "";
-
-      position: absolute;
-
-      inset: 0;
-
-      background:
-        linear-gradient(
-          transparent 25%,
-          rgba(0,0,0,.95)
-        );
-    }
-
-    .member-info {
-      position: absolute;
-
-      left: 20px;
-
-      right: 20px;
-
-      bottom: 20px;
-
-      z-index: 2;
-    }
-
-    .member-number {
-      color: var(--green);
-
-      font-size: 10px;
-
-      margin-bottom: 8px;
-    }
-
-    .member-info h3 {
-      font-size: 17px;
-
-      margin-bottom: 5px;
-    }
-
-    .member-info p {
-      color: #7b898b;
-
-      font-size: 10px;
-    }
-
-
-    /* ===============================
-       LOYIHALAR
-    =============================== */
-
-    .projects {
-      display: grid;
-
-      grid-template-columns:
-        1fr 1fr;
-
-      gap: 22px;
-    }
-
-    .project {
-      overflow: hidden;
-
-      border-radius: 23px;
-
-      background: #081012;
-
-      border: 1px solid #193034;
-
-      transition: .4s;
-    }
-
-    .project:hover {
-      transform: translateY(-8px);
-
-      border-color: var(--blue2);
-
-      box-shadow:
-        0 20px 60px rgba(0,168,255,.08);
-    }
-
-    .project-image {
-      height: 330px;
-
-      position: relative;
-
-      overflow: hidden;
-
-      background: #101a1c;
-    }
-
-    .project-image img {
-      width: 100%;
-
-      height: 100%;
-
-      object-fit: cover;
-
-      transition: .5s;
-    }
-
-    .project:hover .project-image img {
-      transform: scale(1.06);
-    }
-
-    .project-overlay {
-      position: absolute;
-
-      inset: 0;
-
-      display: flex;
-
-      align-items: center;
-
-      justify-content: center;
-
-      background:
-        rgba(0,0,0,.65);
-
-      opacity: 0;
-
-      transition: .3s;
-    }
-
-    .project:hover .project-overlay {
-      opacity: 1;
-    }
-
-    .view-project {
-      padding: 14px 21px;
-
-      border-radius: 10px;
-
-      color: #001208;
-
-      font-size: 12px;
-
-      font-weight: 900;
-
-      background:
-        linear-gradient(
-          90deg,
-          var(--green),
-          var(--blue2)
-        );
-
-      box-shadow:
-        0 0 30px rgba(0,230,118,.25);
-    }
-
-    .project-info {
-      padding: 25px;
-    }
-
-    .project-top {
-      display: flex;
-
-      justify-content: space-between;
-    }
-
-    .project-number {
-      color: #4f6164;
-
-      font-size: 10px;
-    }
-
-    .project-info h3 {
-      font-size: 23px;
-
-      margin: 13px 0 10px;
-    }
-
-    .project-info p {
-      color: #708083;
-
-      font-size: 13px;
-
-      line-height: 1.7;
-    }
-
-    .tags {
-      display: flex;
-
-      gap: 7px;
-
-      flex-wrap: wrap;
-
-      margin-top: 18px;
-    }
-
-    .tag {
-      padding: 7px 10px;
-
-      background: #0f1b1d;
-
-      border: 1px solid #20383c;
-
-      border-radius: 7px;
-
-      color: #8ca0a3;
-
-      font-size: 10px;
-    }
-
-
-    /* ===============================
-       5 TA OVOZ
-    =============================== */
-
-    .votes {
-      display: grid;
-
-      grid-template-columns:
-        repeat(3,1fr);
-
-      gap: 18px;
-    }
-
-    .vote {
-      padding: 30px;
-
-      background: #081012;
-
-      border: 1px solid #193034;
-
-      border-radius: 20px;
-
-      transition: .3s;
-    }
-
-    .vote:hover {
-      transform: translateY(-5px);
-
-      border-color: #236f70;
-    }
-
-    .stars {
-      color: var(--green);
-
-      letter-spacing: 3px;
-
-      margin-bottom: 15px;
-
-      text-shadow:
-        0 0 12px rgba(0,230,118,.45);
-    }
-
-    .vote p {
-      color: #819093;
-
-      line-height: 1.8;
-
-      font-size: 13px;
-
-      margin-bottom: 20px;
-    }
-
-    .vote-name {
-      color: #d5dddd;
-
-      font-weight: 700;
-
-      font-size: 12px;
-    }
-
-
-    /* ===============================
-       CONTACT
-    =============================== */
-
-    .contact-wrapper {
-      padding: 90px 40px;
-
-      border-radius: 30px;
-
-      text-align: center;
-
-      background:
-        radial-gradient(
-          circle at 50% 0%,
-          rgba(0,230,118,.16),
-          transparent 40%
-        ),
-        radial-gradient(
-          circle at 100% 100%,
-          rgba(0,168,255,.12),
-          transparent 40%
-        ),
-        #071011;
-
-      border: 1px solid #1d3a3e;
-    }
-
-    .contact-wrapper h2 {
-      font-size:
-        clamp(38px,6vw,68px);
-
-      letter-spacing: -4px;
-
-      margin: 15px 0 18px;
-    }
-
-    .contact-wrapper > p {
-      max-width: 570px;
-
-      margin: auto;
-
-      color: #738184;
-
-      line-height: 1.8;
-
-      font-size: 14px;
-
-      margin-bottom: 40px;
-    }
-
-    .contact-links {
-      max-width: 900px;
-
-      margin: auto;
-
-      display: grid;
-
-      grid-template-columns:
-        repeat(4,1fr);
-
-      gap: 12px;
-    }
-
-    .social {
-      padding: 22px;
-
-      border-radius: 15px;
-
-      background: #0b1719;
-
-      border: 1px solid #20383c;
-
-      transition: .3s;
-    }
-
-    .social:hover {
-      transform: translateY(-6px);
-
-      background:
-        linear-gradient(
-          135deg,
-          var(--green),
-          var(--blue2)
-        );
-
-      color: #001208;
-
-      border-color: transparent;
-    }
-
-    .social-icon {
-      font-size: 24px;
-
-      margin-bottom: 9px;
-    }
-
-    .social-name {
-      font-size: 12px;
-
-      font-weight: 800;
-    }
-
-    .social-text {
-      display: block;
-
-      color: #657578;
-
-      font-size: 10px;
-
-      margin-top: 5px;
-    }
-
-    .social:hover .social-text {
-      color: #12332a;
-    }
-
-
-    /* ===============================
-       FOOTER
-    =============================== */
-
-    footer {
-      padding: 40px 20px;
-
-      border-top: 1px solid #13282b;
-
-      text-align: center;
-
-      color: #536366;
-
-      font-size: 11px;
-    }
-
-
-    /* ===============================
-       RESPONSIVE
-    =============================== */
-
-    @media(max-width:1100px) {
-
-      .nav-links {
-        gap: 15px;
-      }
-
-      .hero {
-        flex-direction: column;
-
-        align-items: flex-start;
-
-        padding-top: 130px;
-      }
-
-      .hero-card {
-        width: 100%;
-      }
-
       .members {
-        grid-template-columns:
-          repeat(3,1fr);
-      }
+        display: grid;
 
-      .stats {
-        grid-template-columns:
-          repeat(2,1fr);
-      }
+        grid-template-columns: repeat(5, 1fr);
 
-      .contact-links {
-        grid-template-columns:
-          repeat(2,1fr);
-      }
-    }
-
-
-    @media(max-width:800px) {
-
-      .nav-links {
-        display: none;
-      }
-
-      .about-grid,
-      .salary-section,
-      .skills-grid,
-      .projects {
-        grid-template-columns: 1fr;
-      }
-
-      .members {
-        grid-template-columns:
-          repeat(2,1fr);
-      }
-
-      .votes {
-        grid-template-columns: 1fr;
-      }
-
-      .section-title {
-        font-size: 40px;
-      }
-    }
-
-
-    @media(max-width:520px) {
-
-      .hero {
-        min-height: auto;
-
-        padding-bottom: 90px;
-      }
-
-      .hero h1 {
-        font-size: 50px;
-
-        letter-spacing: -4px;
-      }
-
-      .hero-image {
-        height: 280px;
-      }
-
-      .stats {
-        grid-template-columns: 1fr;
-      }
-
-      .members {
-        grid-template-columns: 1fr;
+        gap: 18px;
       }
 
       .member {
-        height: 400px;
+        position: relative;
+
+        height: 360px;
+
+        overflow: hidden;
+
+        border-radius: 22px;
+
+        background: #0b1416;
+
+        border: 1px solid #193034;
+
+        transition: 0.4s;
       }
 
-      .contact-links {
-        grid-template-columns: 1fr;
+      .member:hover {
+        transform: translateY(-8px);
+
+        border-color: var(--green);
+
+        box-shadow: 0 20px 50px rgba(0, 230, 118, 0.08);
       }
+
+      .member img {
+        width: 100%;
+
+        height: 100%;
+
+        object-fit: cover;
+
+        transition: 0.5s;
+      }
+
+      .member:hover img {
+        transform: scale(1.08);
+      }
+
+      .member::after {
+        content: "";
+
+        position: absolute;
+
+        inset: 0;
+
+        background: linear-gradient(transparent 25%, rgba(0, 0, 0, 0.95));
+      }
+
+      .member-info {
+        position: absolute;
+
+        left: 20px;
+
+        right: 20px;
+
+        bottom: 20px;
+
+        z-index: 2;
+      }
+
+      .member-number {
+        color: var(--green);
+
+        font-size: 10px;
+
+        margin-bottom: 8px;
+      }
+
+      .member-info h3 {
+        font-size: 17px;
+
+        margin-bottom: 5px;
+      }
+
+      .member-info p {
+        color: #7b898b;
+
+        font-size: 10px;
+      }
+
+      /* ===============================
+       LOYIHALAR
+    =============================== */
+
+      .projects {
+        display: grid;
+
+        grid-template-columns: 1fr 1fr;
+
+        gap: 22px;
+      }
+
+      .project {
+        overflow: hidden;
+
+        border-radius: 23px;
+
+        background: #081012;
+
+        border: 1px solid #193034;
+
+        transition: 0.4s;
+      }
+
+      .project:hover {
+        transform: translateY(-8px);
+
+        border-color: var(--blue2);
+
+        box-shadow: 0 20px 60px rgba(0, 168, 255, 0.08);
+      }
+
+      .project-image {
+        height: 330px;
+
+        position: relative;
+
+        overflow: hidden;
+
+        background: #101a1c;
+      }
+
+      .project-image img {
+        width: 100%;
+
+        height: 100%;
+
+        object-fit: cover;
+
+        transition: 0.5s;
+      }
+
+      .project:hover .project-image img {
+        transform: scale(1.06);
+      }
+
+      .project-overlay {
+        position: absolute;
+
+        inset: 0;
+
+        display: flex;
+
+        align-items: center;
+
+        justify-content: center;
+
+        background: rgba(0, 0, 0, 0.65);
+
+        opacity: 0;
+
+        transition: 0.3s;
+      }
+
+      .project:hover .project-overlay {
+        opacity: 1;
+      }
+
+      .view-project {
+        padding: 14px 21px;
+
+        border-radius: 10px;
+
+        color: #001208;
+
+        font-size: 12px;
+
+        font-weight: 900;
+
+        background: linear-gradient(90deg, var(--green), var(--blue2));
+
+        box-shadow: 0 0 30px rgba(0, 230, 118, 0.25);
+      }
+
+      .project-info {
+        padding: 25px;
+      }
+
+      .project-top {
+        display: flex;
+
+        justify-content: space-between;
+      }
+
+      .project-number {
+        color: #4f6164;
+
+        font-size: 10px;
+      }
+
+      .project-info h3 {
+        font-size: 23px;
+
+        margin: 13px 0 10px;
+      }
+
+      .project-info p {
+        color: #708083;
+
+        font-size: 13px;
+
+        line-height: 1.7;
+      }
+
+      .tags {
+        display: flex;
+
+        gap: 7px;
+
+        flex-wrap: wrap;
+
+        margin-top: 18px;
+      }
+
+      .tag {
+        padding: 7px 10px;
+
+        background: #0f1b1d;
+
+        border: 1px solid #20383c;
+
+        border-radius: 7px;
+
+        color: #8ca0a3;
+
+        font-size: 10px;
+      }
+
+      /* ===============================
+       5 TA OVOZ
+    =============================== */
+
+      .votes {
+        display: grid;
+
+        grid-template-columns: repeat(3, 1fr);
+
+        gap: 18px;
+      }
+
+      .vote {
+        padding: 30px;
+
+        background: #081012;
+
+        border: 1px solid #193034;
+
+        border-radius: 20px;
+
+        transition: 0.3s;
+      }
+
+      .vote:hover {
+        transform: translateY(-5px);
+
+        border-color: #236f70;
+      }
+
+      .stars {
+        color: var(--green);
+
+        letter-spacing: 3px;
+
+        margin-bottom: 15px;
+
+        text-shadow: 0 0 12px rgba(0, 230, 118, 0.45);
+      }
+
+      .vote p {
+        color: #819093;
+
+        line-height: 1.8;
+
+        font-size: 13px;
+
+        margin-bottom: 20px;
+      }
+
+      .vote-name {
+        color: #d5dddd;
+
+        font-weight: 700;
+
+        font-size: 12px;
+      }
+
+      /* ===============================
+       CONTACT
+    =============================== */
 
       .contact-wrapper {
-        padding: 65px 20px;
+        padding: 90px 40px;
+
+        border-radius: 30px;
+
+        text-align: center;
+
+        background:
+          radial-gradient(
+            circle at 50% 0%,
+            rgba(0, 230, 118, 0.16),
+            transparent 40%
+          ),
+          radial-gradient(
+            circle at 100% 100%,
+            rgba(0, 168, 255, 0.12),
+            transparent 40%
+          ),
+          #071011;
+
+        border: 1px solid #1d3a3e;
       }
 
       .contact-wrapper h2 {
-        letter-spacing: -2px;
+        font-size: clamp(38px, 6vw, 68px);
+
+        letter-spacing: -4px;
+
+        margin: 15px 0 18px;
       }
-    }
 
-  </style>
-</head>
+      .contact-wrapper > p {
+        max-width: 570px;
 
+        margin: auto;
 
-<body>
+        color: #738184;
 
+        line-height: 1.8;
 
-  <!-- =================================
+        font-size: 14px;
+
+        margin-bottom: 40px;
+      }
+
+      .contact-links {
+        max-width: 900px;
+
+        margin: auto;
+
+        display: grid;
+
+        grid-template-columns: repeat(4, 1fr);
+
+        gap: 12px;
+      }
+
+      .social {
+        padding: 22px;
+
+        border-radius: 15px;
+
+        background: #0b1719;
+
+        border: 1px solid #20383c;
+
+        transition: 0.3s;
+      }
+
+      .social:hover {
+        transform: translateY(-6px);
+
+        background: linear-gradient(135deg, var(--green), var(--blue2));
+
+        color: #001208;
+
+        border-color: transparent;
+      }
+
+      .social-icon {
+        font-size: 24px;
+
+        margin-bottom: 9px;
+      }
+
+      .social-name {
+        font-size: 12px;
+
+        font-weight: 800;
+      }
+
+      .social-text {
+        display: block;
+
+        color: #657578;
+
+        font-size: 10px;
+
+        margin-top: 5px;
+      }
+
+      .social:hover .social-text {
+        color: #12332a;
+      }
+
+      /* ===============================
+       FOOTER
+    =============================== */
+
+      footer {
+        padding: 40px 20px;
+
+        border-top: 1px solid #13282b;
+
+        text-align: center;
+
+        color: #536366;
+
+        font-size: 11px;
+      }
+
+      /* ===============================
+       RESPONSIVE
+    =============================== */
+
+      @media (max-width: 1100px) {
+        .nav-links {
+          gap: 15px;
+        }
+
+        .hero {
+          flex-direction: column;
+
+          align-items: flex-start;
+
+          padding-top: 130px;
+        }
+
+        .hero-card {
+          width: 100%;
+        }
+
+        .members {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        .stats {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .contact-links {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (max-width: 800px) {
+        .nav-links {
+          display: none;
+        }
+
+        .about-grid,
+        .salary-section,
+        .skills-grid,
+        .projects {
+          grid-template-columns: 1fr;
+        }
+
+        .members {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .votes {
+          grid-template-columns: 1fr;
+        }
+
+        .section-title {
+          font-size: 40px;
+        }
+      }
+
+      @media (max-width: 520px) {
+        .hero {
+          min-height: auto;
+
+          padding-bottom: 90px;
+        }
+
+        .hero h1 {
+          font-size: 50px;
+
+          letter-spacing: -4px;
+        }
+
+        .hero-image {
+          height: 280px;
+        }
+
+        .stats {
+          grid-template-columns: 1fr;
+        }
+
+        .members {
+          grid-template-columns: 1fr;
+        }
+
+        .member {
+          height: 400px;
+        }
+
+        .contact-links {
+          grid-template-columns: 1fr;
+        }
+
+        .contact-wrapper {
+          padding: 65px 20px;
+        }
+
+        .contact-wrapper h2 {
+          letter-spacing: -2px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- =================================
        HEADER
   ================================== -->
 
-  <header>
+    <header>
+      <nav>
+        <a href="#home" class="logo"> Diyor<span>bek.</span> </a>
 
-    <nav>
+        <ul class="nav-links">
+          <li>
+            <a href="#home">Bosh sahifa</a>
+          </li>
 
-      <a href="#home" class="logo">
-        Diyor<span>bek.</span>
-      </a>
+          <li>
+            <a href="#about">Men haqimda</a>
+          </li>
 
-      <ul class="nav-links">
+          <li>
+            <a href="#skills">Ko‘nikmalar</a>
+          </li>
 
-        <li>
-          <a href="#home">Bosh sahifa</a>
-        </li>
+          <li>
+            <a href="#salary">Oylik</a>
+          </li>
 
-        <li>
-          <a href="#about">Men haqimda</a>
-        </li>
+          <li>
+            <a href="#members">A’zolar</a>
+          </li>
 
-        <li>
-          <a href="#skills">Ko‘nikmalar</a>
-        </li>
+          <li>
+            <a href="#projects">Loyihalar</a>
+          </li>
 
-        <li>
-          <a href="#salary">Oylik</a>
-        </li>
+          <li>
+            <a href="#contact">Bog‘lanish</a>
+          </li>
+        </ul>
 
-        <li>
-          <a href="#members">A’zolar</a>
-        </li>
+        <a href="#contact" class="nav-contact"> Bog‘lanish → </a>
+      </nav>
+    </header>
 
-        <li>
-          <a href="#projects">Loyihalar</a>
-        </li>
-
-        <li>
-          <a href="#contact">Bog‘lanish</a>
-        </li>
-
-      </ul>
-
-      <a
-        href="#contact"
-        class="nav-contact"
-      >
-        Bog‘lanish →
-      </a>
-
-    </nav>
-
-  </header>
-
-
-
-  <!-- =================================
+    <!-- =================================
        HERO
   ================================== -->
 
-  <main id="home">
+    <main id="home">
+      <div class="container">
+        <div class="hero">
+          <div class="hero-text">
+            <div class="status">
+              <span class="status-dot"></span>
 
-    <div class="container">
+              Hozir faolman
+            </div>
 
-      <div class="hero">
+            <h1>
+              Salom, men
 
+              <span class="gradient"> Diyorbek. </span>
+            </h1>
 
-        <div class="hero-text">
-
-          <div class="status">
-
-            <span class="status-dot"></span>
-
-            Hozir faolman
-
-          </div>
-
-
-          <h1>
-
-            Salom, men
-
-            <span class="gradient">
-              Diyorbek.
-            </span>
-
-          </h1>
-
-
-          <p class="hero-description">
-
-            Men zamonaviy web saytlar yaratishga
-            qiziqadigan yosh dasturchiman.
-
-            Chiroyli dizayn, toza kod va
-            foydalanuvchi uchun qulay interfeys
-            yaratishga harakat qilaman.
-
-          </p>
-
-
-          <div class="hero-buttons">
-
-            <a
-              href="#projects"
-              class="btn btn-primary"
-            >
-              Loyihalarimni ko‘rish →
-            </a>
-
-            <a
-              href="#contact"
-              class="btn btn-outline"
-            >
-              Men bilan bog‘lanish
-            </a>
-
-          </div>
-
-        </div>
-
-
-
-        <div class="hero-card">
-
-          <div class="hero-image">
-
-            <!-- BU YERGA O'Z RASMINGNI QO'Y -->
-            <img
-              src="images/diyorbek.jpg"
-              alt="Faxriddinov Diyorbek"
-            >
-
-          </div>
-
-          <div class="hero-card-info">
-
-            <h3>
-              Faxriddinov Diyorbek
-            </h3>
-
-            <p>
-              Frontend Developer • O‘zbekiston 🇺🇿
+            <p class="hero-description">
+              Men zamonaviy web saytlar yaratishga qiziqadigan yosh
+              dasturchiman. Chiroyli dizayn, toza kod va foydalanuvchi uchun
+              qulay interfeys yaratishga harakat qilaman.
             </p>
 
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">
+                Loyihalarimni ko‘rish →
+              </a>
+
+              <a href="#contact" class="btn btn-outline">
+                Men bilan bog‘lanish
+              </a>
+            </div>
           </div>
 
+          <div class="hero-card">
+            <div class="hero-image">
+              <!-- BU YERGA O'Z RASMINGNI QO'Y -->
+              <img
+                src="./image/photo_2026-08-27_14-46-39.jpg"
+                alt="Faxriddinov Diyorbek"
+              />
+            </div>
+
+            <div class="hero-card-info">
+              <h3>Faxriddinov Diyorbek</h3>
+
+              <p>Frontend Developer • O‘zbekiston 🇺🇿</p>
+            </div>
+          </div>
         </div>
-
-
       </div>
+    </main>
 
-    </div>
-
-  </main>
-
-
-
-  <!-- =================================
+    <!-- =================================
        ABOUT
   ================================== -->
 
-  <section id="about">
+    <section id="about">
+      <div class="container">
+        <div class="section-label">01 — Men haqimda</div>
 
-    <div class="container">
+        <h2 class="section-title">Men haqimda</h2>
 
-      <div class="section-label">
-        01 — Men haqimda
+        <div class="about-grid">
+          <div class="dark-card">
+            <p class="about-text">
+              Assalomu alaykum! Men
+              <strong> Faxriddinov Diyorbek </strong>. Men web dasturlashga
+              qiziqaman va zamonaviy saytlar yaratishni o‘rganib kelmoqdaman.
+
+              <br /><br />
+
+              Mening asosiy yo‘nalishim — frontend dasturlash. Hozirda HTML va
+              CSS bo‘yicha bilimlarimni rivojlantiryapman.
+
+              <br /><br />
+
+              Kelajakda JavaScript, backend va boshqa texnologiyalarni ham
+              chuqur o‘rganib, professional dasturchi bo‘lishni maqsad
+              qilganman.
+            </p>
+          </div>
+
+          <div class="dark-card">
+            <div class="info-list">
+              <div class="info-row">
+                <span>Ism</span>
+
+                <span>Diyorbek</span>
+              </div>
+
+              <div class="info-row">
+                <span>Familiya</span>
+
+                <span>Faxriddinov</span>
+              </div>
+
+              <div class="info-row">
+                <span>Vatanim</span>
+
+                <span>O‘zbekiston 🇺🇿</span>
+              </div>
+
+              <div class="info-row">
+                <span>Yoshim</span>
+
+                <span>___ yosh</span>
+              </div>
+
+              <div class="info-row">
+                <span>Yo‘nalish</span>
+
+                <span>Frontend</span>
+              </div>
+
+              <div class="info-row">
+                <span>Holat</span>
+
+                <span style="color: #00e676"> ● Faol </span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-number">8+</div>
+
+            <div class="stat-name">Guruhdoshlarim</div>
+          </div>
+
+          <div class="stat">
+            <div class="stat-number">5</div>
+
+            <div class="stat-name">Ovozlar</div>
+          </div>
+
+          <div class="stat">
+            <div class="stat-number">4</div>
+
+            <div class="stat-name">Loyihalar</div>
+          </div>
+
+          <div class="stat">
+            <div class="stat-number">∞</div>
+
+            <div class="stat-name">Maqsadlarim</div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <h2 class="section-title">
-        Men haqimda
-      </h2>
-
-
-      <div class="about-grid">
-
-
-        <div class="dark-card">
-
-          <p class="about-text">
-
-            Assalomu alaykum!
-
-            Men
-            <strong>
-              Faxriddinov Diyorbek
-            </strong>.
-
-            Men web dasturlashga qiziqaman
-            va zamonaviy saytlar yaratishni
-            o‘rganib kelmoqdaman.
-
-            <br><br>
-
-            Mening asosiy yo‘nalishim —
-            frontend dasturlash.
-
-            Hozirda HTML va CSS bo‘yicha
-            bilimlarimni rivojlantiryapman.
-
-            <br><br>
-
-            Kelajakda JavaScript, backend
-            va boshqa texnologiyalarni ham
-            chuqur o‘rganib, professional
-            dasturchi bo‘lishni maqsad qilganman.
-
-          </p>
-
-        </div>
-
-
-
-        <div class="dark-card">
-
-          <div class="info-list">
-
-
-            <div class="info-row">
-
-              <span>Ism</span>
-
-              <span>Diyorbek</span>
-
-            </div>
-
-
-            <div class="info-row">
-
-              <span>Familiya</span>
-
-              <span>Faxriddinov</span>
-
-            </div>
-
-
-            <div class="info-row">
-
-              <span>Vatanim</span>
-
-              <span>O‘zbekiston 🇺🇿</span>
-
-            </div>
-
-
-            <div class="info-row">
-
-              <span>Yoshim</span>
-
-              <span>___ yosh</span>
-
-            </div>
-
-
-            <div class="info-row">
-
-              <span>Yo‘nalish</span>
-
-              <span>Frontend</span>
-
-            </div>
-
-
-            <div class="info-row">
-
-              <span>Holat</span>
-
-              <span style="color:#00e676">
-                ● Faol
-              </span>
-
-            </div>
-
-
-          </div>
-
-        </div>
-
-      </div>
-
-
-
-      <div class="stats">
-
-
-        <div class="stat">
-
-          <div class="stat-number">
-            8+
-          </div>
-
-          <div class="stat-name">
-            Guruhdoshlarim
-          </div>
-
-        </div>
-
-
-        <div class="stat">
-
-          <div class="stat-number">
-            5
-          </div>
-
-          <div class="stat-name">
-            Ovozlar
-          </div>
-
-        </div>
-
-
-        <div class="stat">
-
-          <div class="stat-number">
-            4
-          </div>
-
-          <div class="stat-name">
-            Loyihalar
-          </div>
-
-        </div>
-
-
-        <div class="stat">
-
-          <div class="stat-number">
-            ∞
-          </div>
-
-          <div class="stat-name">
-            Maqsadlarim
-          </div>
-
-        </div>
-
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-
-  <!-- =================================
+    <!-- =================================
        SKILLS
   ================================== -->
 
-  <section id="skills">
+    <section id="skills">
+      <div class="container">
+        <div class="section-label">02 — Ko‘nikmalar</div>
 
-    <div class="container">
+        <h2 class="section-title">Men biladigan texnologiyalar</h2>
 
-      <div class="section-label">
-        02 — Ko‘nikmalar
+        <div class="skills-grid">
+          <div class="skill-box">
+            <div class="skill-header">
+              <span>HTML</span>
+
+              <span>100%</span>
+            </div>
+
+            <div class="progress-bg">
+              <div class="progress" style="width: 100%"></div>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill-header">
+              <span>CSS</span>
+
+              <span>70%</span>
+            </div>
+
+            <div class="progress-bg">
+              <div class="progress" style="width: 70%"></div>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill-header">
+              <span>JavaScript</span>
+
+              <span>0%</span>
+            </div>
+
+            <div class="progress-bg">
+              <div class="progress" style="width: 0%"></div>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill-header">
+              <span>Web Design</span>
+
+              <span>65%</span>
+            </div>
+
+            <div class="progress-bg">
+              <div class="progress" style="width: 65%"></div>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <h2 class="section-title">
-        Men biladigan texnologiyalar
-      </h2>
-
-
-      <div class="skills-grid">
-
-
-        <div class="skill-box">
-
-          <div class="skill-header">
-
-            <span>HTML</span>
-
-            <span>100%</span>
-
-          </div>
-
-          <div class="progress-bg">
-
-            <div
-              class="progress"
-              style="width:100%"
-            ></div>
-
-          </div>
-
-        </div>
-
-
-
-        <div class="skill-box">
-
-          <div class="skill-header">
-
-            <span>CSS</span>
-
-            <span>70%</span>
-
-          </div>
-
-          <div class="progress-bg">
-
-            <div
-              class="progress"
-              style="width:70%"
-            ></div>
-
-          </div>
-
-        </div>
-
-
-
-        <div class="skill-box">
-
-          <div class="skill-header">
-
-            <span>JavaScript</span>
-
-            <span>0%</span>
-
-          </div>
-
-          <div class="progress-bg">
-
-            <div
-              class="progress"
-              style="width:0%"
-            ></div>
-
-          </div>
-
-        </div>
-
-
-
-        <div class="skill-box">
-
-          <div class="skill-header">
-
-            <span>Web Design</span>
-
-            <span>65%</span>
-
-          </div>
-
-          <div class="progress-bg">
-
-            <div
-              class="progress"
-              style="width:65%"
-            ></div>
-
-          </div>
-
-        </div>
-
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-
-  <!-- =================================
-       OYLIK
-  ================================== -->
-
-  <section id="salary">
-
-    <div class="container">
-
-      <div class="section-label">
-        03 — Oylik
-      </div>
-
-      <h2 class="section-title">
-        Oylik natijam
-      </h2>
-
-
-      <div class="salary-section">
-
-
-        <div class="salary-info">
-
-          <div class="section-label">
-            NATIJA
-          </div>
-
-          <h3>
-            Mening oyligim
-          </h3>
-
-          <p>
-
-            Bu joyga oylik natijang,
-            sertifikat yoki oylik
-            ko‘rsatilgan rasmingni
-            qo‘yishing mumkin.
-
-            <br><br>
-
-            Rasmingni:
-
-            <strong style="color:#00e676">
-              images/oylik.jpg
-            </strong>
-
-            nomi bilan saqla.
-
-            <br><br>
-
-            Rasm o‘ng tomonda katta
-            ko‘rinishda chiqadi.
-
-          </p>
-
-        </div>
-
-
-
-        <div class="salary-image">
-
-          <!-- OYLIK RASMI -->
-          <img
-            src="images/oylik.jpg"
-            alt="Diyorbek oylik natijasi"
-            onerror="this.style.display='none';this.nextElementSibling.style.display='flex';"
-          >
-
-          <div class="image-placeholder">
-
-            <strong>
-              OYLIK RASMI
-            </strong>
-
-            <span>
-              images/oylik.jpg
-            </span>
-
-          </div>
-
-        </div>
-
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-
-  <!-- =================================
+    <!-- =================================
        5 TA A'ZO
   ================================== -->
 
-  <section id="members">
+    <section id="members">
+      <div class="container">
+        <div class="section-label">04 — Jamoa</div>
 
-    <div class="container">
+        <h2 class="section-title">Oyla azolarim</h2>
 
-      <div class="section-label">
-        04 — Jamoa
-      </div>
+        <div class="members">
+          <!-- A'ZO 1 -->
 
-      <h2 class="section-title">
-        Oyla azolarim
-      </h2>
+          <div class="member">
+            <img
+              src="./photo_2026-08-27_10-51-23.jpg"
+              alt="A'zo 1"
+              onerror="this.style.display = 'none'"
+            />
 
+            <div class="member-info">
+              <div class="member-number">01 / 05</div>
 
-      <div class="members">
+              <h3>Dadam</h3>
 
-
-        <!-- A'ZO 1 -->
-
-        <div class="member">
-
-          <img
-            src="./photo_2026-08-27_10-51-23.jpg"
-            alt="A'zo 1"
-            onerror="this.style.display='none';"
-          >
-
-          <div class="member-info">
-
-            <div class="member-number">
-              01 / 05
+              <p>Dadam oylamizni boshi va m</p>
             </div>
-
-            <h3>
-              Dadam
-            </h3>
-
-            <p>
-              Dadam oylamizni boshi va m
-            </p>
-
           </div>
 
-        </div>
+          <!-- A'ZO 2 -->
 
+          <div class="member">
+            <img
+              src="./photo_2026-08-27_10-47-49.jpg"
+              alt="A'zo 2"
+              onerror="this.style.display = 'none'"
+            />
 
+            <div class="member-info">
+              <div class="member-number">02 / 05</div>
 
-        <!-- A'ZO 2 -->
+              <h3>Onam</h3>
 
-        <div class="member">
-
-          <img
-            src="./photo_2026-08-27_10-47-49.jpg"
-            alt="A'zo 2"
-            onerror="this.style.display='none';"
-          >
-
-          <div class="member-info">
-
-            <div class="member-number">
-              02 / 05
+              <p>
+                Onam Hozirda uy bekasi va menga hardoyim yordam berib kelgan va
+                menga pazitiv bolgan
+              </p>
             </div>
-
-            <h3>
-              Onam
-            </h3>
-
-            <p>
-              Onam Hozirda uy bekasi va menga hardoyim yordam berib kelgan va menga pazitiv bolgan
-            </p>
-
           </div>
 
-        </div>
+          <!-- A'ZO 3 -->
 
+          <div class="member">
+            <img
+              src="./photo_2026-08-27_10-51-07.jpg"
+              alt="A'zo 3"
+              onerror="this.style.display = 'none'"
+            />
 
+            <div class="member-info">
+              <div class="member-number">03 / 05</div>
 
-        <!-- A'ZO 3 -->
+              <h3>Opam</h3>
 
-        <div class="member">
-
-          <img
-            src="./photo_2026-08-27_10-51-07.jpg"
-            alt="A'zo 3"
-            onerror="this.style.display='none';"
-          >
-
-          <div class="member-info">
-
-            <div class="member-number">
-              03 / 05
+              <p>Opam Hozirda inglstili Cursiga Boryapti</p>
             </div>
-
-            <h3>
-              Opam 
-            </h3>
-
-            <p>
-              Opam Hozirda inglstili Cursiga Boryapti
-            </p>
-
           </div>
 
-        </div>
+          <!-- A'ZO 4 -->
 
+          <div class="member">
+            <img
+              src="./photo_2026-08-27_10-51-47.jpg"
+              alt="A'zo 4"
+              onerror="this.style.display = 'none'"
+            />
 
+            <div class="member-info">
+              <div class="member-number">04 / 05</div>
 
-        <!-- A'ZO 4 -->
+              <h3>Men</h3>
 
-        <div class="member">
-
-          <img
-            src="./photo_2026-08-27_10-51-47.jpg"
-            alt="A'zo 4"
-            onerror="this.style.display='none';"
-          >
-
-          <div class="member-info">
-
-            <div class="member-number">
-              04 / 05
+              <p>Men Web dasturchiman</p>
             </div>
-
-            <h3>
-              Men
-            </h3>
-
-            <p>
-              Men Web dasturchiman
-            </p>
-
           </div>
 
-        </div>
+          <!-- A'ZO 5 -->
 
+          <div class="member">
+            <img
+              src="./photo_2026-08-27_10-51-53.jpg"
+              alt="A'zo 5"
+              onerror="this.style.display = 'none'"
+            />
 
+            <div class="member-info">
+              <div class="member-number">05 / 05</div>
 
-        <!-- A'ZO 5 -->
+              <h3>Sinlim</h3>
 
-        <div class="member">
-
-          <img
-            src="./photo_2026-08-27_10-51-53.jpg"
-            alt="A'zo 5"
-            onerror="this.style.display='none';"
-          >
-
-          <div class="member-info">
-
-            <div class="member-number">
-              05 / 05
+              <p>Sinlim juda pazitiv oylamizi quvonchi</p>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <h3>
-              Sinlim
-            </h3>
+    <section id="classmates">
+      <div class="container">
+        <div class="section-label">04 — Guruhdoshlarim</div>
 
-            <p>
-              Sinlim juda pazitiv oylamizi quvonchi
-            </p>
+        <h2 class="section-title">Mening 8 ta guruhdoshim</h2>
 
+        <div class="members classmates">
+          <div class="member">
+            <img
+              src="./image/photo_2026-08-27_14-46-52.jpg"
+              alt="Guruhdosh 1"
+            />
+            <div class="member-info">
+              <div class="member-number">01 / 08</div>
+              <h3>Elyor</h3>
+              <p>Mening guruhdoshim</p>
+            </div>
           </div>
 
-        </div>
+          <div class="member">
+            <img
+              src="./image/photo_2026-08-27_14-46-41.jpg"
+              alt="Guruhdosh 2"
+            />
+            <div class="member-info">
+              <div class="member-number">02 / 08</div>
+              <h3>Mustafo</h3>
+              <p>Mening guruhdoshim</p>
+            </div>
+          </div>
 
+          <div class="member">
+            <img
+              src="./image/photo_2026-08-27_14-46-44.jpg"
+              alt="Guruhdosh 3"
+            />
+            <div class="member-info">
+              <div class="member-number">03 / 08</div>
+              <h3>Bilol</h3>
+              <p>Mening guruhdoshim</p>
+            </div>
+          </div>
 
-      </div>
+          <div class="member">
+            <img
+              src="./image/photo_2026-08-27_14-46-46.jpg"
+              alt="Guruhdosh 4"
+            />
+            <div class="member-info">
+              <div class="member-number">04 / 08</div>
+              <h3>Oybek</h3>
+              <p>Mening guruhdoshim</p>
+            </div>
+          </div>
 
-    </div>
+          <div class="member">
+            <img
+              src="./image/photo_2026-08-27_14-46-48.jpg"
+              alt="Guruhdosh 5"
+            />
+            <div class="member-info">
+              <div class="member-number">05 / 08</div>
+              <h3>Shoxruh</h3>
+              <p>Mening guruhdoshim</p>
+            </div>
+          </div>
 
-  </section>
+          <div class="member">
+            <img
+              src="./image/photo_2026-08-27_14-46-50.jpg"
+              alt="Guruhdosh 6"
+            />
+            <div class="member-info">
+              <div class="member-number">06 / 08</div>
+              <h3>Muhammad</h3>
+              <p>Mening guruhdoshim</p>
+            </div>
+          </div>
 
-<section id="classmates">
-
-  <div class="container">
-
-    <div class="section-label">
-      04 — Guruhdoshlarim
-    </div>
-
-    <h2 class="section-title">
-      Mening 8 ta guruhdoshim
-    </h2>
-
-    <div class="members classmates">
-
-      <div class="member">
-        <img src="./image/photo_2026-08-27_14-46-52.jpg" alt="Guruhdosh 1">
-        <div class="member-info">
-          <div class="member-number">01 / 08</div>
-          <h3>Elyor</h3>
-          <p>Mening guruhdoshim</p>
-        </div>
-      </div>
-
-      <div class="member">
-        <img src="./image/photo_2026-08-27_14-46-41.jpg" alt="Guruhdosh 2">
-        <div class="member-info">
-          <div class="member-number">02 / 08</div>
-          <h3> Mustafo</h3>
-          <p>Mening guruhdoshim</p>
-        </div>
-      </div>
-
-      <div class="member">
-        <img src="./image/photo_2026-08-27_14-46-44.jpg" alt="Guruhdosh 3">
-        <div class="member-info">
-          <div class="member-number">03 / 08</div>
-          <h3>Bilol</h3>
-          <p>Mening guruhdoshim</p>
-        </div>
-      </div>
-
-      <div class="member">
-        <img src="./image/photo_2026-08-27_14-46-46.jpg" alt="Guruhdosh 4">
-        <div class="member-info">
-          <div class="member-number">04 / 08</div>
-          <h3>Oybek</h3>
-          <p>Mening guruhdoshim</p>
-        </div>
-      </div>
-
-      <div class="member">
-        <img src="./image/photo_2026-08-27_14-46-48.jpg" alt="Guruhdosh 5">
-        <div class="member-info">
-          <div class="member-number">05 / 08</div>
-          <h3>Shoxruh</h3>
-          <p>Mening guruhdoshim</p>
-        </div>
-      </div>
-
-      <div class="member">
-        <img src="./image/photo_2026-08-27_14-46-50.jpg" alt="Guruhdosh 6">
-        <div class="member-info">
-          <div class="member-number">06 / 08</div>
-          <h3>Muhammad</h3>
-          <p>Mening guruhdoshim</p>
+          <div class="member">
+            <img
+              src="./image/photo_2026-08-27_14-46-54.jpg"
+              alt="Guruhdosh 8"
+            />
+            <div class="member-info">
+              <div class="member-number">08 / 08</div>
+              <h3>Asila</h3>
+              <p>Mening guruhdoshim</p>
+            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-     
-      <div class="member">
-        <img src="./image/photo_2026-08-27_14-46-54.jpg" alt="Guruhdosh 8">
-        <div class="member-info">
-          <div class="member-number">08 / 08</div>
-          <h3>Asila</h3>
-          <p>Mening guruhdoshim</p>
-        </div>
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-  <!-- =================================
+    <!-- =================================
        LOYIHALAR
   ================================== -->
 
-  <section id="projects">
+    <section id="projects">
+      <div class="container">
+        <div class="section-label">05 — Portfolio</div>
 
-    <div class="container">
+        <h2 class="section-title">Loyihalarim</h2>
 
-      <div class="section-label">
-        05 — Portfolio
+        <div class="projects">
+          <!-- LOYIHA 1 -->
+
+          <div class="project">
+            <div class="project-image">
+              <img src="./figmas/image.png" alt="Loyiha 1" />
+
+              <div class="project-overlay">
+                <a
+                  href="https://example.com"
+                  target="_blank"
+                  class="view-project"
+                >
+                  Loyihani ko‘rish →
+                </a>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-top">
+                <span class="project-number"> PROJECT 01 </span>
+
+                <span class="project-number"> 2026 </span>
+              </div>
+
+              <h3>Portfolio Website</h3>
+
+              <p>Zamonaviy va responsive shaxsiy portfolio web sayti.</p>
+
+              <div class="tags">
+                <span class="tag"> HTML </span>
+
+                <span class="tag"> CSS </span>
+
+                <span class="tag"> Responsive </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- LOYIHA 2 -->
+
+          <div class="project">
+            <div class="project-image">
+              <img
+                src="./figmas/photo_2026-08-27_14-58-37.jpg"
+                alt="Loyiha 2"
+              />
+
+              <div class="project-overlay">
+                <a
+                  href="https://example.com"
+                  target="_blank"
+                  class="view-project"
+                >
+                  Loyihani ko‘rish →
+                </a>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-top">
+                <span class="project-number"> PROJECT 02 </span>
+
+                <span class="project-number"> 2026 </span>
+              </div>
+
+              <h3>Landing Page</h3>
+
+              <p>Minimalistik va professional landing page loyihasi.</p>
+
+              <div class="tags">
+                <span class="tag"> HTML </span>
+
+                <span class="tag"> CSS </span>
+
+                <span class="tag"> UI </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- LOYIHA 3 -->
+
+          <div class="project">
+            <div class="project-image">
+              <img src="./figmas/image copy.png" alt="Loyiha 3" />
+
+              <div class="project-overlay">
+                <a
+                  href="https://example.com"
+                  target="_blank"
+                  class="view-project"
+                >
+                  Loyihani ko‘rish →
+                </a>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-top">
+                <span class="project-number"> PROJECT 03 </span>
+
+                <span class="project-number"> 2026 </span>
+              </div>
+
+              <h3>Creative Website</h3>
+
+              <p>Kreativ dizayn va zamonaviy ko‘rinishga ega web loyiha.</p>
+
+              <div class="tags">
+                <span class="tag"> HTML </span>
+
+                <span class="tag"> CSS </span>
+
+                <span class="tag"> Creative </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- LOYIHA 4 -->
+
+          <div class="project">
+            <div class="project-image">
+              <img src="./figmas/image.png" alt="Loyiha 4" />
+
+              <div class="project-overlay">
+                <a
+                  href="https://velvety-tiramisu-689d10.netlify.app/"
+                  target="_blank"
+                  class="view-project"
+                >
+                  Loyihani ko‘rish →
+                </a>
+              </div>
+            </div>
+
+            <div class="project-info">
+              <div class="project-top">
+                <span class="project-number"> PROJECT 04 </span>
+
+                <span class="project-number"> 2026 </span>
+              </div>
+
+              <h3>Personal Project</h3>
+
+              <p>O‘zimning g‘oyam asosida yaratilgan shaxsiy loyiha.</p>
+
+              <div class="tags">
+                <span class="tag"> HTML </span>
+
+                <span class="tag"> CSS </span>
+
+                <span class="tag"> Web </span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <h2 class="section-title">
-        Loyihalarim
-      </h2>
-
-
-      <div class="projects">
-
-
-        <!-- LOYIHA 1 -->
-
-        <div class="project">
-
-          <div class="project-image">
-
-            <img
-              src="./figmas/image.png"
-              alt="Loyiha 1"
-            >
-
-            <div class="project-overlay">
-
-              <a
-                href="https://example.com"
-                target="_blank"
-                class="view-project"
-              >
-                Loyihani ko‘rish →
-              </a>
-
-            </div>
-
-          </div>
-
-
-          <div class="project-info">
-
-            <div class="project-top">
-
-              <span class="project-number">
-                PROJECT 01
-              </span>
-
-              <span class="project-number">
-                2026
-              </span>
-
-            </div>
-
-            <h3>
-              Portfolio Website
-            </h3>
-
-            <p>
-              Zamonaviy va responsive
-              shaxsiy portfolio web sayti.
-            </p>
-
-            <div class="tags">
-
-              <span class="tag">
-                HTML
-              </span>
-
-              <span class="tag">
-                CSS
-              </span>
-
-              <span class="tag">
-                Responsive
-              </span>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-
-        <!-- LOYIHA 2 -->
-
-        <div class="project">
-
-          <div class="project-image">
-
-            <img
-              src="./figmas/photo_2026-08-27_14-58-37.jpg"
-              alt="Loyiha 2"
-            >
-
-            <div class="project-overlay">
-
-              <a
-                href="https://example.com"
-                target="_blank"
-                class="view-project"
-              >
-                Loyihani ko‘rish →
-              </a>
-
-            </div>
-
-          </div>
-
-
-          <div class="project-info">
-
-            <div class="project-top">
-
-              <span class="project-number">
-                PROJECT 02
-              </span>
-
-              <span class="project-number">
-                2026
-              </span>
-
-            </div>
-
-            <h3>
-              Landing Page
-            </h3>
-
-            <p>
-              Minimalistik va professional
-              landing page loyihasi.
-            </p>
-
-            <div class="tags">
-
-              <span class="tag">
-                HTML
-              </span>
-
-              <span class="tag">
-                CSS
-              </span>
-
-              <span class="tag">
-                UI
-              </span>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-
-        <!-- LOYIHA 3 -->
-
-        <div class="project">
-
-          <div class="project-image">
-
-            <img
-              src="./figmas/image copy.png"
-              alt="Loyiha 3"
-            >
-
-            <div class="project-overlay">
-
-              <a
-                href="https://example.com"
-                target="_blank"
-                class="view-project"
-              >
-                Loyihani ko‘rish →
-              </a>
-
-            </div>
-
-          </div>
-
-
-          <div class="project-info">
-
-            <div class="project-top">
-
-              <span class="project-number">
-                PROJECT 03
-              </span>
-
-              <span class="project-number">
-                2026
-              </span>
-
-            </div>
-
-            <h3>
-              Creative Website
-            </h3>
-
-            <p>
-              Kreativ dizayn va zamonaviy
-              ko‘rinishga ega web loyiha.
-            </p>
-
-            <div class="tags">
-
-              <span class="tag">
-                HTML
-              </span>
-
-              <span class="tag">
-                CSS
-              </span>
-
-              <span class="tag">
-                Creative
-              </span>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-
-        <!-- LOYIHA 4 -->
-
-        <div class="project">
-
-          <div class="project-image">
-
-            <img
-              src="images/loyiha4.jpg"
-              alt="Loyiha 4"
-            >
-
-            <div class="project-overlay">
-
-              <a
-                href="https://example.com"
-                target="_blank"
-                class="view-project"
-              >
-                Loyihani ko‘rish →
-              </a>
-
-            </div>
-
-          </div>
-
-
-          <div class="project-info">
-
-            <div class="project-top">
-
-              <span class="project-number">
-                PROJECT 04
-              </span>
-
-              <span class="project-number">
-                2026
-              </span>
-
-            </div>
-
-            <h3>
-              Personal Project
-            </h3>
-
-            <p>
-              O‘zimning g‘oyam asosida
-              yaratilgan shaxsiy loyiha.
-            </p>
-
-            <div class="tags">
-
-              <span class="tag">
-                HTML
-              </span>
-
-              <span class="tag">
-                CSS
-              </span>
-
-              <span class="tag">
-                Web
-              </span>
-
-            </div>
-
-          </div>
-
-        </div>
-
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-
-  <!-- =================================
+    <!-- =================================
        5 TA OVOZ
   ================================== -->
 
-  <section id="votes">
+    <section id="votes">
+      <div class="container">
+        <div class="section-label">06 — Fikrlar</div>
 
-    <div class="container">
+        <h2 class="section-title">Guruhdoshlarim fikri</h2>
 
-      <div class="section-label">
-        06 — Fikrlar
+        <div class="votes">
+          <div class="vote">
+            <div class="stars">★★★★★</div>
+
+            <p>
+              Diyorbekning portfolio sayti juda chiroyli va zamonaviy
+              tayyorlangan.
+            </p>
+
+            <div class="vote-name">— Guruhdoshim 01</div>
+          </div>
+
+          <div class="vote">
+            <div class="stars">★★★★★</div>
+
+            <p>Dark dizayn va yashil-ko‘k ranglar juda yaxshi mos tushgan.</p>
+
+            <div class="vote-name">— Guruhdoshim 02</div>
+          </div>
+
+          <div class="vote">
+            <div class="stars">★★★★★</div>
+
+            <p>Sayt juda professional ko‘rinadi. Diyorbekka omad!</p>
+
+            <div class="vote-name">— Guruhdoshim 03</div>
+          </div>
+
+          <div class="vote">
+            <div class="stars">★★★★★</div>
+
+            <p>
+              Loyihalar bo‘limi va rasmlar bilan ishlangan dizayn juda yoqdi.
+            </p>
+
+            <div class="vote-name">— Guruhdoshim 04</div>
+          </div>
+
+          <div class="vote">
+            <div class="stars">★★★★★</div>
+
+            <p>
+              Juda zo‘r portfolio. Kelajakda bundan ham katta loyihalar
+              qilishiga ishonaman.
+            </p>
+
+            <div class="vote-name">— Guruhdoshim 05</div>
+          </div>
+        </div>
       </div>
+    </section>
 
-      <h2 class="section-title">
-        Guruhdoshlarim fikri
-      </h2>
-
-
-      <div class="votes">
-
-
-        <div class="vote">
-
-          <div class="stars">
-            ★★★★★
-          </div>
-
-          <p>
-            Diyorbekning portfolio sayti juda
-            chiroyli va zamonaviy tayyorlangan.
-          </p>
-
-          <div class="vote-name">
-            — Guruhdoshim 01
-          </div>
-
-        </div>
-
-
-        <div class="vote">
-
-          <div class="stars">
-            ★★★★★
-          </div>
-
-          <p>
-            Dark dizayn va yashil-ko‘k ranglar
-            juda yaxshi mos tushgan.
-          </p>
-
-          <div class="vote-name">
-            — Guruhdoshim 02
-          </div>
-
-        </div>
-
-
-        <div class="vote">
-
-          <div class="stars">
-            ★★★★★
-          </div>
-
-          <p>
-            Sayt juda professional ko‘rinadi.
-            Diyorbekka omad!
-          </p>
-
-          <div class="vote-name">
-            — Guruhdoshim 03
-          </div>
-
-        </div>
-
-
-        <div class="vote">
-
-          <div class="stars">
-            ★★★★★
-          </div>
-
-          <p>
-            Loyihalar bo‘limi va rasmlar bilan
-            ishlangan dizayn juda yoqdi.
-          </p>
-
-          <div class="vote-name">
-            — Guruhdoshim 04
-          </div>
-
-        </div>
-
-
-        <div class="vote">
-
-          <div class="stars">
-            ★★★★★
-          </div>
-
-          <p>
-            Juda zo‘r portfolio. Kelajakda
-            bundan ham katta loyihalar qilishiga
-            ishonaman.
-          </p>
-
-          <div class="vote-name">
-            — Guruhdoshim 05
-          </div>
-
-        </div>
-
-
-      </div>
-
-    </div>
-
-  </section>
-
-
-
-  <!-- =================================
+    <!-- =================================
        CONTACT
   ================================== -->
 
-  <section id="contact">
+    <section id="contact">
+      <div class="container">
+        <div class="contact-wrapper">
+          <div class="section-label">07 — Aloqa</div>
 
-    <div class="container">
+          <h2>Men bilan bog‘laning.</h2>
 
-      <div class="contact-wrapper">
+          <p>
+            Agar men bilan bog‘lanmoqchi bo‘lsangiz, quyidagi platformalardan
+            birortasi orqali yozishingiz mumkin.
+          </p>
 
+          <div class="contact-links">
+            <!-- TELEFON -->
 
-        <div class="section-label">
-          07 — Aloqa
+            <a href="tel:+998901234567" class="social">
+              <div class="social-icon">☎️</div>
+
+              <div class="social-name">Telefon</div>
+
+              <span class="social-text"> +998 90 123 45 67 </span>
+            </a>
+
+            <!-- TELEGRAM -->
+
+            <a href="https://t.me/diyorbek" target="_blank" class="social">
+              <div class="social-icon">✈️</div>
+
+              <div class="social-name">Telegram</div>
+
+              <span class="social-text"> @diyorbek </span>
+            </a>
+
+            <!-- INSTAGRAM -->
+
+            <a
+              href="https://instagram.com/diyorbek"
+              target="_blank"
+              class="social"
+            >
+              <div class="social-icon">📷</div>
+
+              <div class="social-name">Instagram</div>
+
+              <span class="social-text"> @diyorbek </span>
+            </a>
+
+            <!-- YOUTUBE -->
+
+            <a href="https://youtube.com/" target="_blank" class="social">
+              <div class="social-icon">▶️</div>
+
+              <div class="social-name">YouTube</div>
+
+              <span class="social-text"> Kanalim </span>
+            </a>
+          </div>
+
+          <br />
+          <br />
+
+          <a href="mailto:diyorbek@example.com" class="btn btn-primary">
+            Email orqali yozish →
+          </a>
         </div>
-
-
-        <h2>
-          Men bilan bog‘laning.
-        </h2>
-
-
-        <p>
-
-          Agar men bilan bog‘lanmoqchi
-          bo‘lsangiz, quyidagi platformalardan
-          birortasi orqali yozishingiz mumkin.
-
-        </p>
-
-
-        <div class="contact-links">
-
-
-          <!-- TELEFON -->
-
-          <a
-            href="tel:+998901234567"
-            class="social"
-          >
-
-            <div class="social-icon">
-              ☎️
-            </div>
-
-            <div class="social-name">
-              Telefon
-            </div>
-
-            <span class="social-text">
-              +998 90 123 45 67
-            </span>
-
-          </a>
-
-
-
-          <!-- TELEGRAM -->
-
-          <a
-            href="https://t.me/diyorbek"
-            target="_blank"
-            class="social"
-          >
-
-            <div class="social-icon">
-              ✈️
-            </div>
-
-            <div class="social-name">
-              Telegram
-            </div>
-
-            <span class="social-text">
-              @diyorbek
-            </span>
-
-          </a>
-
-
-
-          <!-- INSTAGRAM -->
-
-          <a
-            href="https://instagram.com/diyorbek"
-            target="_blank"
-            class="social"
-          >
-
-            <div class="social-icon">
-              📷
-            </div>
-
-            <div class="social-name">
-              Instagram
-            </div>
-
-            <span class="social-text">
-              @diyorbek
-            </span>
-
-          </a>
-
-
-
-          <!-- YOUTUBE -->
-
-          <a
-            href="https://youtube.com/"
-            target="_blank"
-            class="social"
-          >
-
-            <div class="social-icon">
-              ▶️
-            </div>
-
-            <div class="social-name">
-              YouTube
-            </div>
-
-            <span class="social-text">
-              Kanalim
-            </span>
-
-          </a>
-
-
-        </div>
-
-
-        <br>
-        <br>
-
-
-        <a
-          href="mailto:diyorbek@example.com"
-          class="btn btn-primary"
-        >
-          Email orqali yozish →
-        </a>
-
-
       </div>
+    </section>
 
-    </div>
-
-  </section>
-
-
-
-  <!-- =================================
+    <!-- =================================
        FOOTER
   ================================== -->
 
-  <footer>
+    <footer>
+      © 2026
 
-    © 2026
+      <strong style="color: #b8c4c6"> Faxriddinov Diyorbek </strong>
 
-    <strong style="color:#b8c4c6">
-      Faxriddinov Diyorbek
-    </strong>
-
-    — Barcha huquqlar himoyalangan.
-
-  </footer>
-
-
-</body>
+      — Barcha huquqlar himoyalangan.
+    </footer>
+  </body>
 </html>
